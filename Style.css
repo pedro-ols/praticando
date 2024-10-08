@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --headerLine-color:#db2727;
+    --footerLine-color:#1c1fe6aa;
+    --main-color:#dad5d5e3;
+    --square-color:#dfb016;
+    --rect-pile-color:#a204e0aa;
+}
+
+body{
+    background-color: #76f2f7c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-geral{
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-color);
+    margin-top: 5rem;
+    border-radius: 3rem;
+    border: #4b4848 solid 1rem;
+}
+.balls{
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.ball-1, .ball-2, .ball-3{
+    width: 2rem;
+    height: 40%;
+    border-radius: 20rem;
+    background-color: var(--main-color);
+    margin: 0.5rem;
+}
+.ball-1{
+    background-color: rgb(212, 25, 25);
+}
+.ball-2{
+    background-color: rgb(211, 177, 28);
+}
+.ball-3{
+    background-color: rgb(57, 158, 54);
+}
+.box{
+    width: 100%;
+    height: 87.5%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.layer-1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.rect-header-main, .rect-header{
+    height: 90%;
+    background-color: var(--headerLine-color);
+    border-radius: 0.3rem;
+}
+.rect-header-main{
+    width: 50%;
+    margin-right: 2.5%;
+
+}
+.rect-header{
+    width: 35%;
+    margin-left: 2.5%;
+}
+.layer-2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column wrap;
+    margin-bottom: 0;
+}
+.square, .rect-pile{
+    border-radius: 0.75rem;
+}
+.square{
+    width: 60%;
+    height: 17rem;
+    background-color: var(--square-color);
+}
+.rect-pile{
+    width: 17rem;
+    height: 27%;
+    background-color: var(--rect-pile-color);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.layer-3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.rect-footer-main, .rect-footer{
+    height: 90%;
+    background-color: var(--footerLine-color);
+    border-radius: 0.3rem;
+}
+.rect-footer-main{
+    width: 50%;
+    margin-right: 2.5%;
+}
+.rect-footer{
+    width: 25%;
+    margin:2.5%;
+}
